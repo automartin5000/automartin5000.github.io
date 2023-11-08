@@ -82,6 +82,7 @@ check_env() {
 #   git reset --hard "$hash"
 # }
 
+
 init_files() {
   if $_no_gh; then
     rm -rf .github
