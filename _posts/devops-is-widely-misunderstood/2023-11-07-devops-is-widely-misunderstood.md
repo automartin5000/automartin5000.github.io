@@ -1,6 +1,6 @@
 ---
 title: DevOps Is Widely Misunderstood, Fundamentally Broken, and Needs a Rebranding
-author: Martin
+author: martin
 date: 2023-11-07 08:00:00 
 categories: [DevOps]
 tags: [DevOps, Cloud, AWS, Microsoft, Amazon]
