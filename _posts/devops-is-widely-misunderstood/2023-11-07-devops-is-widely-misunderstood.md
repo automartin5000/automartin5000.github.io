@@ -2,8 +2,8 @@
 title: DevOps Is Widely Misunderstood, Fundamentally Broken, and Needs a Rebranding
 author: martin
 date: 2023-11-07 08:00:00 
-categories: [DevOps]
-tags: [DevOps, Cloud, AWS, Microsoft, Amazon]
+categories: [DevOps, Cloud]
+tags: [DevOps, Cloud, AWS, Microsoft, Amazon, ops]
 ---
 
 Once upon a time, I had a colleague tell me “DevOps is a culture, not a job title”. This was early 2016, when the idea of DevOps was still relatively new in engineering culture. My general world view at that time was that developers shouldn’t have anything to do with infrastructure, because how could they possibly understand it? So as you can imagine, my colleague’s message went right over my head.
