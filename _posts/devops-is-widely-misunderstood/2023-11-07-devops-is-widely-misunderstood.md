@@ -115,7 +115,7 @@ At this point you might be saying “We don’t have an ops team, we have a DevO
 
 There’s been plenty of ink spilled about the dangers of this approach. But the highlights are:
 1. Organizational scalability issues
-2. Resistant to change and lack of agility ([Dev]Ops teams will generally only want to support technologies they’re comfortable with)
+2. Resistant to change and lack of agility (\[Dev\]Ops teams will generally only want to support technologies they’re comfortable with)
 3. Siloed teams with poor communication, especially during high severity incidents
 4. Slow release cycles
 5. Complex ownership models
