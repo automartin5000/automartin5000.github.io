@@ -66,7 +66,7 @@ theme_mode: # [light|dark]
 # img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "/commons/avatar.jpg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -105,7 +105,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: "https://moresmallerthings.com"
+baseurl: ""
 
 # ------------ The following options are not recommended to be modified ------------------
 
