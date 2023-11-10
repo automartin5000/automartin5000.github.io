@@ -7,13 +7,12 @@ timezone: America/New_York
 
 title: More Smaller Things
 
-tagline: It's not the size that counts, it's how many you have.
+tagline: Bigger isn't better
 
 description: >-
-  A Cloud and DevOps blog by a guy who's been doing this stuff for a while. Ex-AWS.
+  A Cloud and DevOps blog by a guy with too many scars. Ex-AWS.
 
 url: "https://moresmallerthings.com"
-
 
 google_site_verification: P_boNPuvf3vLOE-JX-kmoro6SVLeQjlkN5KMLV6vj5E
 
@@ -67,8 +66,7 @@ pwa:
 
 paginate: 10
 
-# The base URL of your site
-baseurl: ""
+baseurl: "/"
 
 # ------------ The following options are not recommended to be modified ------------------
 
