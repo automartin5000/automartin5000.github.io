@@ -4,5 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+User Story: As an engineer, I want to elevate critical concepts and principles that don't appear to be getting the attention and understanding they need.
+
+Scope: Modern application development.
