@@ -1,5 +1,5 @@
 ---
-title: DevOps Is Widely Misunderstood, Fundamentally Broken, and Needs a Rebranding
+title: DevOps Is Failing
 author: martin
 date: 2023-11-07 08:00:00 
 categories: [DevOps]
