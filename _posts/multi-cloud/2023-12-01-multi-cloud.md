@@ -1,7 +1,7 @@
 ---
 title: Multi-Cloud is Not Like Multi-Bank Accounts
 author: martin
-date: 2023-11-30 08:00:00 
+date: 2023-12-03 17:40:00  
 categories: [Cloud]
 tags: [multi-cloud, Cloud, AWS, Microsoft, Amazon, Google, GCP, Azure, cloud-agnostic]
 ---
