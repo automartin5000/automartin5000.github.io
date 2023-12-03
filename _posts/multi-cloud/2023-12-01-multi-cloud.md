@@ -16,14 +16,14 @@ However, it’s telling that usually the people driving multi-cloud strategies i
 Running a multi-cloud application is substantially more complex than maintaining several bank accounts. So let’s analyze the business justifications why executives say their companies need to be multi-cloud and break down some of the technical implications in doing so.
 
 ## The Business Justifications
-### ABC Cloud Provider Might Go Out of Business
-Somehow, this is by far the most common reason I hear from CTOs/heads of engineering for why they need to be multi-cloud. Generally, this is explained under the need of “business continuity”. “What happens if ABC cloud vendor goes out of business tomorrow?” Ironically, I’ve heard this from companies of all sizes, even companies that haven’t been around as long as the cloud vendors themselves.
+### Cloud Provider Might Go Out of Business
+Somehow, this is by far the most common reason I hear from CTOs/heads of engineering for why they need to be multi-cloud. Generally, this is explained under the need of “business continuity”. “What happens if the cloud vendor goes out of business tomorrow?” Ironically, I’ve heard this from companies of all sizes, even companies that haven’t been around as long as the cloud vendors themselves.
 
 There’s no data to show what it would look like if a cloud vendor did go out of business, as it hasn’t happened yet. Also, the current three major cloud providers (AWS, Azure, GCP) are all owned by companies making massive profits. In the case of AWS and Azure, those divisions are actually the driver of much of their company’s profits. So much of the arguments here are theoretical and difficult to directly address. 
 
 However, humoring for a moment the “going-out-of-business” argument, it’s hard to imagine a scenario where all the data centers of a cloud vendor just go dark overnight. Even if one of the big three decided to [stop its cloud business](https://www.theinformation.com/articles/google-brass-set-2023-as-deadline-to-beat-amazon-microsoft-in-cloud), that would inevitably be a very long drawn out process. There would be plenty of time, at least a year if not more, for a move to another vendor. Even Rackspace, which once was a leader in cloud servers but long ago fell way behind the big three, still hosts servers.
 
-### ABC Cloud Vendor Might Increase Prices
+### Cloud Vendor Might Increase Prices
 Unlike the last concern, this is at least an argument rooted in some historical data, though not necessarily from the big three. Executives who make this argument are most likely worried about reliving pain from price increases from companies like Oracle and SAP (and probably pre-Azure Microsoft).
 
 Realistically, inflation being what it is, this is always a possibility. However, prices have been generally observed to go down across cloud vendors, not up, or at least stay flat (which is down counting inflation). For this article, a well-known industry expert in cloud cost management was consulted who echoed the experience that, at least for AWS, the current largest cloud vendor, they have never directly increased prices of an offering.
