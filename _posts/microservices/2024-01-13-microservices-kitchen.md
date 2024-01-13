@@ -1,12 +1,14 @@
 ---
 title: Microservices - Hell’s Kitchen Nightmares Edition
 author: martin
-date: 2024-01-13 13:00:00 
+date: 2024-01-13 16:30:00 
 categories: [Microservices]
 tags: [Microservices, Cloud, Architecture, Scaling, Distributed]
 ---
 
-Let’s talk about kitchens, specifically commercially kitchens. They’re a textbook example of efficiency and speed perfected. A key element of this speed and efficiency is how they’re broken down into areas that specialize in different domains. It  starts with the very beginning of the meal creation process with prep chefs and continues onto different areas such as butchers, grill chefs, and more...all the way through to pastry chefs for dessert. 
+![well oiled kitchen](./images/working-kitchen.webp)
+
+Let’s talk about kitchens, specifically restaurant kitchens. They’re a textbook example of efficiency and speed perfected. A key element of this speed and efficiency is how they’re broken down into areas that specialize in different domains. It  starts with the very beginning of the meal creation process with prep chefs and continues onto different areas such as butchers, grill chefs, and more...all the way through to pastry chefs for dessert. 
 
 Just as important as the chef’s specialized skills, is the workspace itself is specially designed to serve the needs of that domain. And of course, the chefs have 100% ownership and accountability of their space. They decide the kitchen equipment they need, and ensure it’s well taken care of to keep it running smoothly. 
 
@@ -16,7 +18,7 @@ Over the past 15-20 years, the tech industry has taken this model and applied it
 
 However, to hear it from DHH (creator of Ruby and Basecamp), microservices are dying because they’re a terrible idea and no one other than a few big tech companies should be implementing them. I won’t boost his SEO rankings and link to his posts here, you can find them if you want, but the gist of it is that distributed computing is hard and requires tooling, skills, money, and use-cases that only the largest tech companies have/need. He asserts that most companies don’t need that level of complexity and should only deploy monoliths. 
 
-The catalyst for his post was [this article](https://www.primevideotech.com/video-streaming/scaling-up-the-prime-video-audio-video-monitoring-service-and-reducing-costs-by-90) from the Prime Video team discussing a change in their architecture from serverless Step Functions to containers. To begin with, I would argue that the article itself incorrectly uses the term “monolith”. Taking a few microservices hooked up to AWS Step Functions and combining them into a single container may or many not technically be a monolith, but it’s definitely not a monolith in the way the industry thinks about them (think: massive Rails apps like GitHub, Shopify, etc).
+The catalyst for his post was [this article](https://www.primevideotech.com/video-streaming/scaling-up-the-prime-video-audio-video-monitoring-service-and-reducing-costs-by-90) from the Prime Video team discussing a change in their architecture from serverless Step Functions to containers. To begin with, I would argue that the article itself incorrectly uses the term "monolith" Taking a few microservices hooked up to AWS Step Functions and combining them into a single container may or many not technically be a monolith, but it’s definitely not a monolith in the way the industry thinks about them (think: massive Rails apps like GitHub, Shopify, etc).
 
 I won’t spend anymore time talking about DHH, but there is one concern that he raised that is not entirely off base and worth addressing.
 
@@ -24,7 +26,7 @@ For the purpose of this discussion, let’s set aside any discussions about spec
 
 ## No CAP, All Tooling
 
-Your first instinct might be to say “distributed computing is hard” and point to all the academic articles about how hard distributed computing is. However, from personal experience and observing the industry, many of the struggles with microservices come well before we even get to [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem).
+Your first instinct might be to say "distributed computing is hard" and point to all the academic articles about how hard distributed computing is. However, from personal experience and observing the industry, many of the struggles with microservices come well before we even get to [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem).
 
 ### Builder Tooling
 
@@ -81,7 +83,7 @@ Historically, tools such as [CookieCutter](https://cookiecutter.readthedocs.io/e
 
 ### User authorization
 
-You might be screaming at the screen saying “OAuth2!”. OAuth2 does a fine job of authentication, but comes up short at authorization. OpenID tokens attempted to resolve some of these deficiencies, however it’s still only scratching the surface for requirements.
+You might be screaming at the screen saying "OAuth2!". OAuth2 does a fine job of authentication, but comes up short at authorization. OpenID tokens attempted to resolve some of these deficiencies, however it’s still only scratching the surface for requirements.
 
 A tool like the [Open Policy Agent](https://www.openpolicyagent.org) is really the best example of attempting to address what’s needed. However, as of the last time I checked, implementation is still complicated and adoption in application frameworks is still mostly non-existent. From a developer experience perspective, the [OPA policy syntax](https://www.openpolicyagent.org/docs/latest/#example) really pales in comparison to something like [Django permissions](https://docs.djangoproject.com/en/5.0/topics/auth/default/#the-permission-required-decorator). This makes the arguments for microservices even more challenging.
 
