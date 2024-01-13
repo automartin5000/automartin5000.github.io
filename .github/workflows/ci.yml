@@ -29,13 +29,16 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
 
       - name: Build Assets
         run: npm i && npm run build
+
+      - name: Install Ruby dependencies
+        run: bundle install
 
       - name: Test Site
         run: bash tools/test
